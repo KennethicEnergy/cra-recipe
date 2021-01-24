@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue&display=swap');
+
+
+h5 {
+  font-family: 'Imbue', serif;
+  font-size: 5rem;
+}
+
+span {
+  font-style: italic;
+}
+
+p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.media {
+  width: 100%;
+  padding: 8px;
+}
+
+hr {
+  height:2px;
+  border:0;
+  background-color: #444;
+  line-height:20px;
+}
+
+hr:before {
+content: '';
+display: block;
+height: 1px;
+background-color: #111;
+}
+
+hr:after {
+  content: 'Read';
+  color:#ccc;
+  display:block;
+  text-align:center;
+  background-color:#222;
+  width:60px;
+  margin-top:-10px;
+  position:absolute;
+  left:50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%);  
+}

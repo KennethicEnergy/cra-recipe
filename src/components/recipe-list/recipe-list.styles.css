@@ -1,0 +1,9 @@
+.recipe-list {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+li:not(:last-child) {
+  margin-bottom: 15px;
+}

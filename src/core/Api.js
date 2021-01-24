@@ -23,7 +23,7 @@ export default class Api {
         }
       })
       .catch((err) => {
-        console.log("from fetch", err);
+        console.error("ERROR", err);
       });
   };
 
@@ -41,13 +41,5 @@ export default class Api {
       method: "GET",
     });
     return specials ? specials : {};
-  };
-
-  deleteRecipe = async (uuid) => {
-    const url = `${API_URL}/recipes/${uuid}`;
-    const response = await this.goFetch(url, {
-      method: "DELETE",
-    });
-    return response ? response : {};
   };
 }

@@ -1,13 +1,18 @@
 import React from "react";
-import Api from "./core/Api";
+import SessionProvider from "./core/SessionProvider";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const api = new Api();
-const recipes = api.getRecipes();
-const specials = api.getSpecials();
+import Recipe from "./components/recipe-list/recipe-list.component";
 
 function App() {
-  return <div>I'm in</div>;
+  return (
+    <div>
+      <SessionProvider>
+        <Recipe />
+      </SessionProvider>
+    </div>
+  );
 }
 
 export default App;
